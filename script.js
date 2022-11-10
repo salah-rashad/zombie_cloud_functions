@@ -25,7 +25,7 @@ handlers.getBaseCharacters = function (args) {
             for (const key2 in chrAbilities) {
                 var ab = chrAbilities[key2];
                 var baseAbility = parsedAbilities.find(el => el.id == ab.id)
-                chr.abilities[key2] = baseAbility;
+                chr.abilities[key2].details = baseAbility;
             }
         }
 
