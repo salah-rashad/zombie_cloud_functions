@@ -1,0 +1,99 @@
+{
+    "Characters": [
+        {
+            "id": "leader",
+            "name": "Leader",
+            "health": 100,
+            "speed": 35,
+            "abilities": [
+                {
+                    "id": "heal",
+                    "amount": 10
+                }
+            ]
+        },
+        {
+            "id": "fighter",
+            "name": "Fighter",
+            "health": 100,
+            "speed": 10
+        },
+        {
+            "id": "engineer",
+            "name": "Engineer",
+            "health": 100,
+            "speed": 15
+        },
+        {
+            "id": "medic",
+            "name": "Medic",
+            "health": 100,
+            "speed": 20
+        },
+        {
+            "id": "recon",
+            "name": "Recon",
+            "health": 100,
+            "speed": 50
+        },
+        {
+            "id": "scavenger",
+            "name": "Scavenger",
+            "health": 100,
+            "speed": 30
+        }
+    ],
+    "Abilities": [
+        {
+            "id": "heal",
+            "name": "Heal",
+            "description": "Can heal themselves and other survivors."
+        }
+    ]
+}
+/* {
+    "Characters": {
+        "Leader": {
+            "name": "Leader",
+            "health": 100,
+            "speed": "chr1",
+            "abilities": [
+                {
+                    "id": "Heal",
+                    "amount": 10
+                }
+            ]
+        },
+        "Fighter": {
+            "name": "Fighter",
+            "health": 100,
+            "speed": "chr2"
+        },
+        "Engineer": {
+            "name": "Engineer",
+            "health": 100,
+            "speed": "chr2"
+        },
+        "Medic": {
+            "name": "Medic",
+            "health": 100,
+            "speed": "chr2"
+        },
+        "Recon": {
+            "name": "Recon",
+            "health": 100,
+            "speed": "chr2"
+        },
+        "Scavenger": {
+            "name": "Scavenger",
+            "health": 100,
+            "speed": "chr2"
+        }
+    },
+    "Abilities": [
+        "Heal",{
+            "name": "Heal",
+            "description": "Can heal themselves and other survivors."
+        }
+    ]
+} */

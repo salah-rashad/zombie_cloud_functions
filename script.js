@@ -13,7 +13,10 @@ handlers.getBaseCharacters = function (args) {
     var parsedCharacters = JSON.parse(characters);
     var parsedAbilities = JSON.parse(abilities);
 
-    var engineer = parsedCharacters["Engineer"];
+    log.info(parsedCharacters);
+    log.info(parsedAbilities);
+
+    var engineer = parsedCharacters[2];
     log.info(engineer);
     log.info(engineer["id"]);
 
@@ -23,9 +26,9 @@ handlers.getBaseCharacters = function (args) {
         log.info(key);
         if (Object.hasOwnProperty.call(parsedCharacters, key)) {
             const element = parsedCharacters[key];
-            log.info(element);
-            // var name = element["name"];
-            options[key] = parsedCharacters[key];
+            log.info(element.id);
+            var name = element.name;
+            options[id] = parsedCharacters[key];
         }
     }
 
