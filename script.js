@@ -15,7 +15,7 @@ handlers.getBaseCharacters = function (args) {
     var engineer = parsedCharacters[2];
     // log.info(engineer);
 
-    var options = {};
+    var options = [];
 
     for (const key in parsedCharacters) {
         var chr = parsedCharacters[key];
@@ -30,7 +30,7 @@ handlers.getBaseCharacters = function (args) {
         }
 
         var id = chr.id;
-        options[id] = chr;
+        options[key] = chr;
     }
 
     return options;
