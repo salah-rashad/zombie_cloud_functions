@@ -28,7 +28,7 @@ handlers.getBaseCharacters = function (args) {
                 console.log(ab.id);
                 
 
-                var baseAbility = parsedAbilities.find(el => el.id == ab.id)
+                var baseAbility = parsedAbilities.find(el => el.id === ab.id)
                 console.log(baseAbility);
                 
                 console.log(typeof(chr.abilities))
