@@ -18,18 +18,15 @@ handlers.getBaseCharacters = function (args) {
 
     var engineer = parsedCharacters[2];
     log.info(engineer);
-    log.info(engineer["id"]);
+    log.info(engineer.id);
 
     var options = {};
 
     for (const key in parsedCharacters) {
-        log.info(key);
-        if (Object.hasOwnProperty.call(parsedCharacters, key)) {
-            const element = parsedCharacters[key];
-            log.info(element.id);
-            var name = element.name;
-            options[id] = parsedCharacters[key];
-        }
+        const element = parsedCharacters[key];
+        var id = element.id;
+        log.info(element.name);
+        options[id] = parsedCharacters[key];
     }
 
     return options;
