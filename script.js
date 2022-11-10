@@ -22,13 +22,14 @@ handlers.getBaseCharacters = function (args) {
         var chrAbilities = chr.abilities;
 
         if (chrAbilities) {
-            for (const ab in chrAbilities) {
-                var abID = ab.id;
+            for (const key2 in chrAbilities) {
+                var ab = chrAbilities[key2];
+                
+                log.info(ab.id);
+                
 
-                log.info(abID);
-
-                // let baseAbility = parsedAbilities.find(el => el.value.id == abID)
-                // log.info(baseAbility);
+                let baseAbility = parsedAbilities.find(el => el.value.id == ab.id)
+                log.info(baseAbility);
             }
         }
 
