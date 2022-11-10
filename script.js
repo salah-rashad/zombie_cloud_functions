@@ -18,26 +18,18 @@ handlers.getBaseCharacters = function (args) {
     var options = {};
 
     for (const key in parsedCharacters) {
-        const chr = parsedCharacters[key];
+        var chr = parsedCharacters[key];
         var chrAbilities = chr.abilities;
 
         if (chrAbilities) {
             for (const key2 in chrAbilities) {
                 var ab = chrAbilities[key2];
-                
-                console.log(ab.id);
-                
-
-                var baseAbility = parsedAbilities.find(el => log.debug(el))
-                console.log(baseAbility);
-                
-                console.log(typeof(chr.abilities))
+                var baseAbility = parsedAbilities.find(el => el.id == ab.id)
                 chr.abilities[key2] = baseAbility;
             }
         }
 
         var id = chr.id;
-        // log.info(chr.name);
         options[id] = chr;
     }
 
