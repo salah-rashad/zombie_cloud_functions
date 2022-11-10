@@ -27,8 +27,8 @@ handlers.getBaseCharacters = function (args) {
 
                 log.info(abID);
 
-                let baseAbility = parsedAbilities.find(el => el.value.id == abID)
-                log.info(baseAbility);
+                // let baseAbility = parsedAbilities.find(el => el.value.id == abID)
+                // log.info(baseAbility);
             }
         }
 
